@@ -18,7 +18,7 @@ st.write("""
 """)
 dataset_name = st.sidebar.selectbox("Select Dataset", ("Iris","Breast Cancer","Wine Dataset"))
 classifier_name = st.sidebar.selectbox("Select Classifier", ("KNN","SVM","Random Forest"))
-metrics = st.sidebar.multiselect("What metrics to plot?", ('Confusion Matrix', 'ROC Curve', 'Precision-Recall Curve'))
+metrics ='Confusion Matrix'
 
 def getDataset(dataset_name):
     if dataset_name == 'Iris':
